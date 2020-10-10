@@ -5,3 +5,7 @@
 <h2>Breadcrumb for Bats</h2>
 
 {{ collections.all | eleventyNavigationBreadcrumb("Bats") | eleventyNavigationToHtml | safe }}
+
+<h2>Breadcrumb for Bats and include current entry</h2>
+
+{{ collections.all | eleventyNavigationBreadcrumb("Bats", true) | eleventyNavigationToHtml | safe }}
